@@ -6,6 +6,11 @@ Utilities for processing user-agent strings. Can be used to handle http requests
 Original code by Harald Walker:
 http://www.bitwalker.eu/software/user-agent-utils
 
+Highlights
+----------
+
+* Added support for computers running Firefox on BSD
+
 Maven
 -----
 
