@@ -378,6 +378,10 @@ public class OperatingSystemTest {
 	String[] ubuntu = {
 			"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:40.0) Gecko/20100101 Firefox/40.0"
 	};
+
+	String[] bsd = {
+			"Mozilla/5.0 (X11; FreeBSD amd64; rv:46.0) Gecko/20100101 Firefox/46.0"
+	};
 	
 	String[] kindle2 = {
 			"Mozilla/4.0 (compatible; Linux 2.6.22) NetFront/3.4 Kindle/2.0 (screen 600x800)"
@@ -478,6 +482,7 @@ public class OperatingSystemTest {
 		testAgents(genericTablet, OperatingSystem.UNKNOWN_TABLET);
 		testAgents(unknown, OperatingSystem.UNKNOWN);
 		testAgents(ubuntu_touch, OperatingSystem.UBUNTU_TOUCH_MOBILE);
+		testAgents(bsd, OperatingSystem.FREEBSD);
 	}
 
 	@Test
@@ -507,6 +512,7 @@ public class OperatingSystemTest {
 		testDeviceTypes(googleTV, DeviceType.DMR);
 		testDeviceTypes(ubuntu_touch, DeviceType.MOBILE);
 		testDeviceTypes(ubuntu, DeviceType.COMPUTER);
+		testDeviceTypes(bsd, DeviceType.COMPUTER);
 	}
 	
 	public void testGroupRecursion() {

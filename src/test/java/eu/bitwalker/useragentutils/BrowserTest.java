@@ -296,6 +296,10 @@ public class BrowserTest {
 			"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:28.0) Gecko/20100101 Firefox/28.0"
 	};
 
+	String[] firefox46 = new String[] {
+			"Mozilla/5.0 (X11; FreeBSD amd64; rv:46.0) Gecko/20100101 Firefox/46.0"
+	};
+
 	String[] firefox3mobile = {
 			"Mozilla/5.0 (X11; U; Linux armv7l; en-US; rv:1.9.2a1pre) Gecko/20091127 Firefox/3.5 Maemo Browser 1.5.6 RX-51 N900"
 	};
@@ -319,6 +323,10 @@ public class BrowserTest {
 	String[] safari = {
 			"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/525.28.3 (KHTML, like Gecko) Version/3.2.3 Safari/525.28.3",
 			"Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-gb) AppleWebKit/523.10.6 (KHTML, like Gecko) Version/3.0.4 Safari/523.10.6"
+	};
+
+	String[] safari9 = {
+			"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
 	};
 	
 	String[] safari8 = {
@@ -667,6 +675,8 @@ public class BrowserTest {
 		testAgents(firefox19, Browser.FIREFOX19);
 		testAgents(firefox20, Browser.FIREFOX20);
 		testAgents(firefox25, Browser.FIREFOX25);
+		testAgents(firefox28, Browser.FIREFOX28);
+		testAgents(firefox46, Browser.FIREFOX46);
 		testAgents(firefox3mobile, Browser.FIREFOX3MOBILE);
 		testAgents(firefoxMobile, Browser.FIREFOX_MOBILE);
 		testAgents(firefoxMobileForIos, Browser.FIREFOX_MOBILE_IOS);
@@ -674,6 +684,7 @@ public class BrowserTest {
 		testAgents(futureFirefoxVersion, Browser.FIREFOX);
 		testAgents(safari, Browser.SAFARI);
 		testAgents(dolfin, Browser.DOLFIN2);
+		testAgents(safari9, Browser.SAFARI9);
 		testAgents(safari8, Browser.SAFARI8);
 		testAgents(safari7, Browser.SAFARI7);
 		testAgents(safari6, Browser.SAFARI6);
